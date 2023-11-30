@@ -1,0 +1,440 @@
+{
+	"info": {
+		"_postman_id": "d88080bc-c129-4d07-a564-8579f27a70ea",
+		"name": "tienda_proyecto_final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18267248"
+	},
+	"item": [
+		{
+			"name": "agregarCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"David\",\r\n    \"correo\":\"david1234@correo.com\",\r\n    \"direccion\":\"Calle falsa 123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API_tienda/agregarCliente.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API_tienda",
+						"agregarCliente.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "borrarCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_cliente\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API_tienda/borrarCliente.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API_tienda",
+						"borrarCliente.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Ricardo\",\r\n    \"correo\":\"david123@correo.com\",\r\n    \"direccion\":\"Calle falsa 123\",\r\n    \"id_cliente\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API_tienda/editarCliente.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API_tienda",
+						"editarCliente.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerClientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/API_tienda/obtenerClientes.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API_tienda",
+						"obtenerClientes.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregarProducto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Tenis de plataforma bravada 2.0\",\r\n    \"descripcion\":\"Los tenis de lona tienen una esencia clásica y este diseño de adidas la aprovecha al máximo.\",\r\n    \"precio\":269065.00,\r\n    \"stock\":29,\r\n    \"imagen\":\"img_pd_9\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API_tienda/agregarProducto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API_tienda",
+						"agregarProducto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "borrarProducto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_producto\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API_tienda/borrarProducto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API_tienda",
+						"borrarProducto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarProducto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Zapatilla 2\",\r\n    \"descripcion\":\"gran zapatilla\",\r\n    \"precio\":150000.00,\r\n    \"stock\":30,\r\n    \"id_producto\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API_tienda/editarProducto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API_tienda",
+						"editarProducto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerProductos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/API_tienda/obtenerProductos.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API_tienda",
+						"obtenerProductos.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerProducto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_producto\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API_tienda/obtenerProducto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API_tienda",
+						"obtenerProducto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerPedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_cliente\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API_tienda/obtenerPedido.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API_tienda",
+						"obtenerPedido.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearPedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_cliente\":5,\r\n    \"total\":521415.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API_tienda/crearPedido.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API_tienda",
+						"crearPedido.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearDetallePedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_pedido\": 2,\r\n    \"detalles\": [\r\n        {\r\n            \"id_producto\": 2,\r\n            \"precio_unitario\": 241465.00,\r\n            \"cantidad\": 1,\r\n            \"subtotal\": 241465.00\r\n        },\r\n        {\r\n            \"id_producto\": 3,\r\n            \"precio_unitario\": 279950.00,\r\n            \"cantidad\": 1,\r\n            \"subtotal\": 279950.00\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API_tienda/crearDetallePedido.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API_tienda",
+						"crearDetallePedido.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerDetallePedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_pedido\":12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API_tienda/obtenerDetallePedido.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API_tienda",
+						"obtenerDetallePedido.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizarPedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"estado\":\"exitoso\",\r\n    \"id_pedido\":12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API_tienda/actualizarPedido.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API_tienda",
+						"actualizarPedido.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizarEstadoPedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"estado\":\"pendiente\",\r\n    \"id_pedido\":13\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API_tienda/actualizarEstadoPedido.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API_tienda",
+						"actualizarEstadoPedido.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "borrarPedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_pedido\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/API_tienda/borrarPedido.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API_tienda",
+						"borrarPedido.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
